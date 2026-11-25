@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "host",
+    "outDir": "dist-host",
+    "types": ["node"]
+  },
+  "include": ["host/**/*.ts"],
+  "exclude": ["host/**/*.test.ts"]
+}

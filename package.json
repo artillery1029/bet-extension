@@ -1,0 +1,26 @@
+{
+  "name": "odds-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=26.4.0 <27" },
+  "scripts": {
+    "build": "npm run build:plugin && npm run build:host",
+    "build:plugin": "tsc -p tsconfig.json && node scripts/copy-assets.mjs",
+    "build:host": "tsc -p tsconfig.host.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.host.json --noEmit",
+    "dev:host": "tsx host/index.ts",
+    "start:host": "node dist-host/index.js",
+    "test": "vitest run host",
+    "test:host": "vitest run host",
+    "test:browser": "node scripts/browser-smoke.mjs",
+    "test:host:serve": "node scripts/integration-host.mjs"
+  },
+  "dependencies": { "fastify": "5.12.8" },
+  "devDependencies": {
+    "@types/node": "26.6.10",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.1.2"
+  }
+}

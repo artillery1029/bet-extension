@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>XHH Bet · 本地模拟</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><div><div class="eyebrow">XHH BET</div><h1>本地模拟控制台</h1></div><span class="mode">SIMULATION</span></header>
+  <p class="safety">未启用实盘。这里的 SIMULATED 仅表示保存了本地模拟记录，不代表平台接受订单或真实成交。</p>
+  <section>
+    <h2>宿主连接</h2><div class="mono secondary" id="host-url"></div>
+    <p id="connection">尚未配对</p>
+    <label for="token">本次宿主启动配对密钥</label>
+    <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="从本机宿主终端粘贴，重启后失效">
+    <div class="actions"><button id="pair" class="primary">配对本机宿主</button><button id="disconnect" disabled>断开</button></div>
+    <p class="secondary small-text">宿主还须允许此插件ID：</p><div id="extension-id" class="mono secondary selectable"></div>
+  </section>
+  <section>
+    <div class="section-title"><h2>模拟意图</h2><button id="refresh" class="small" disabled>刷新</button></div>
+    <p class="secondary small-text">演示按钮使用虚构数据，仅验证本地保存与幂等重试；不表示行情、费用或套利。</p>
+    <div class="actions"><button id="demo" disabled>创建一条演示模拟</button><button id="retry" disabled>重试未确认模拟</button></div>
+    <p id="pending" class="secondary small-text"></p><div id="notification" role="status" aria-live="polite"></div>
+    <div id="intents"><p class="secondary">配对后查看本地模拟记录。</p></div>
+    <div class="pagination"><button id="previous" class="small" disabled>上一页</button><span id="count" class="secondary small-text">共 0 条</span><button id="next" class="small" disabled>下一页</button></div>
+    <details><summary>模拟事件详情</summary><pre id="details"></pre></details>
+  </section>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

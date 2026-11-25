@@ -1,0 +1,47 @@
+{
+  "mode": "simulation",
+  "idempotencyKey": "contract-replay-fixture-0001",
+  "scanId": "contract:replay:three-not:1",
+  "eventGroupId": "contract:replay:event:1",
+  "eventLabel": "协议回放样例（非当前行情）",
+  "sourceMode": "replay",
+  "sourceObservedAt": "2026-11-25T18:41:45.656Z",
+  "targetReturn": "100",
+  "estimatedCost": "100.6875",
+  "estimatedMinReturn": "100",
+  "positions": [
+    {
+      "legId": "contract:not-home",
+      "venue": "sx",
+      "marketId": "contract:home",
+      "label": "非主胜 · 协议样例",
+      "levelIndex": 0,
+      "price": "0.99375",
+      "quantity": "50",
+      "stake": "49.6875",
+      "fee": "0"
+    },
+    {
+      "legId": "contract:not-draw",
+      "venue": "sx",
+      "marketId": "contract:draw",
+      "label": "非平局 · 协议样例",
+      "levelIndex": 0,
+      "price": "0.96625",
+      "quantity": "50",
+      "stake": "48.3125",
+      "fee": "0"
+    },
+    {
+      "legId": "contract:not-away",
+      "venue": "sx",
+      "marketId": "contract:away",
+      "label": "非客胜 · 协议样例",
+      "levelIndex": 0,
+      "price": "0.05375",
+      "quantity": "50",
+      "stake": "2.6875",
+      "fee": "0"
+    }
+  ]
+}

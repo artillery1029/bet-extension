@@ -1,0 +1,33 @@
+:root { color-scheme: dark; font: 13px 'Segoe UI','Microsoft YaHei',sans-serif; color:#edf0f4; background:#101318; }
+* { box-sizing:border-box; }
+body { width:460px; margin:0; padding:20px; }
+header,.section-title,.pagination { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.eyebrow { color:#919eae; font-size:10px; letter-spacing:.16em; }
+h1 { font-size:20px; margin:5px 0 0; }
+h2 { font-size:14px; margin:0 0 12px; }
+.mode { background:#263521; color:#b8ed6b; border:1px solid #536943; padding:5px 8px; border-radius:5px; font:11px Consolas,monospace; }
+.safety { color:#b8ed6b; line-height:1.7; font-size:12px; margin:16px 0; }
+section { background:#181d24; border:1px solid #303844; border-radius:10px; padding:15px; margin-top:14px; }
+label { display:block; margin:12px 0 7px; color:#919eae; font-size:12px; }
+input { display:block; width:100%; padding:10px; background:#101318; border:1px solid #303844; color:#edf0f4; border-radius:5px; outline:none; }
+input:focus { border-color:#b8ed6b; }
+button { color:#edf0f4; background:#252d38; border:1px solid #404b5b; border-radius:5px; padding:8px 10px; cursor:pointer; font:inherit; }
+button:hover:not(:disabled) { border-color:#b8ed6b; }
+button:disabled { opacity:.4; cursor:default; }
+button.primary { color:#101318; background:#b8ed6b; border-color:#b8ed6b; font-weight:600; }
+button.small { padding:5px 8px; font-size:11px; }
+.actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+.mono,pre { font-family:Consolas,monospace; overflow-wrap:anywhere; }
+.secondary { color:#919eae; }
+.small-text { font-size:11px; line-height:1.6; }
+.selectable { user-select:all; font-size:11px; }
+#connection { color:#9ebcff; }
+#notification { color:#9ebcff; font-size:12px; line-height:1.6; overflow-wrap:anywhere; margin:12px 0; }
+.intent { border-top:1px solid #303844; padding:13px 0; }
+.intent strong { display:block; font-size:13px; }
+.intent .mono { font-size:10px; margin-top:8px; }
+.intent p { font-size:11px; line-height:1.6; }
+.badge { display:inline-block; color:#b8ed6b; background:#263521; border-radius:3px; font:10px Consolas,monospace; padding:3px 5px; margin-top:7px; }
+.pagination { margin:12px 0; }
+summary { font-size:12px; color:#919eae; cursor:pointer; }
+pre { white-space:pre-wrap; max-height:260px; overflow:auto; font-size:10px; background:#101318; padding:10px; border-radius:5px; }
